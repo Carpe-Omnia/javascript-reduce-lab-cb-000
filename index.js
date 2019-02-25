@@ -21,10 +21,11 @@ function mapper(accumulator, currentValue) {
   !!accumulator.words ? acumulator.words += 1 : accumulator.words = 1 ;
   return accumulator ;
 }
+var thing = {} ; 
 const wordCountMap = monologueLines.reduce(mapper, thing) ;
 
 const totalBatteries = batteryBatches.reduce(batCount, 0) ;
 function batCount(accumulator, currentValue) {
   return accumulator + currentValue ;
 }
-var thing = {}
+
