@@ -46,4 +46,4 @@ const wordCounter = function (wordCountObj, sentence) {
 
 
  const wordCountMap = monologueLines.reduce(wordCounter, {});
-*/ 
+*/
