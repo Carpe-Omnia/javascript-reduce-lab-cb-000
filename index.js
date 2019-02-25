@@ -31,7 +31,7 @@ const mapper = function(accumulator, currentValue) {
   else
   { accumulator[wordCount] = 1 ; }
   return accumulator ;
-}
+})
  const wordCountMap = monologueLines.reduce(mapper, {});
 
 /*
