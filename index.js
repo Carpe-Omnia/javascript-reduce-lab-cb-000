@@ -34,4 +34,3 @@ function mapper(accumulator, currentValue) {
   return accumulator ;
 }
 const wordCountMap = monologueLines.reduce(mapper, {}) ;
-
