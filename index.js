@@ -29,7 +29,7 @@ function batCount(accumulator, currentValue) {
   return accumulator + currentValue ;
 }
 function mapper(accumulator, currentValue) {
-  var words = `${currentValue.split(" ").size}` ;
+  var words = currentValue.split(" ").size ;
   !!accumulator.words ? acumulator.words += 1 : accumulator.words = 1 ;
   return accumulator ;
 }
