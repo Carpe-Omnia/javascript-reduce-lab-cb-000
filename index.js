@@ -25,7 +25,6 @@ function batCount(accumulator, currentValue) {
 }
 
 const mapper = function(accumulator, currentValue) {
-  console.log(currentValue)
   var words = `${currentValue.split(" ").length}` ;
   words in accumulator ? acumulator.words += 1 : accumulator.words = 1 ;
   return accumulator ;
