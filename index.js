@@ -19,5 +19,5 @@ const monologueLines = [
 
 const totalBatteries = batteryBatches.reduce(batCount, 0)
 function batCount(collection) {
-  
+
 }
