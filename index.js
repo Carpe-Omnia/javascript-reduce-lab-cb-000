@@ -25,7 +25,7 @@ function batCount(accumulator, currentValue) {
 }
 
 const mapper = function(accumulator, currentValue) {
-  var length = `${currentValue.split(" ").length}` ;
+  var length = currentValue.split(" ").length ;
   length in accumulator ? acumulator[length] += 1 : accumulator[length] = 1 ;
   return accumulator ;
 }
