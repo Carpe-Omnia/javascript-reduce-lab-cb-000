@@ -16,13 +16,13 @@ const monologueLines = [
   'No.',
   'I am the one who knocks!'
 ];
-/*
+
 function mapper(accumulator, currentValue) {
   var words = `${currentValue.split(" ").size}` ;
   !!accumulator.words ? acumulator.words += 1 : accumulator.words = 1 ;
   return accumulator ;
 }
-*/
+
 var thing = {} ;
 /*
 const wordCountMap = monologueLines.reduce(mapper, thing) ;
