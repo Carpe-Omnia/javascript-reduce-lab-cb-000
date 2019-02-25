@@ -25,7 +25,7 @@ function mapper(accumulator, currentValue) {
 
 var thing = {} ;
 
-const wordCountMap = monologueLines.reduce(mapper, Object.new) ;
+const wordCountMap = monologueLines.reduce(mapper, 0) ;
 
 const totalBatteries = batteryBatches.reduce(batCount, 0) ;
 
