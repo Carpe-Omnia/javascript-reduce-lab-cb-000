@@ -18,16 +18,12 @@ const monologueLines = [
 ];
 
 
-
-var thing = {} ;
-
-
-
 const totalBatteries = batteryBatches.reduce(batCount, 0) ;
 
 function batCount(accumulator, currentValue) {
   return accumulator + currentValue ;
 }
+/*
 function mapper(accumulator, currentValue) {
   var words = currentValue.split(" ").size ;
   !!accumulator.words ? acumulator.words += 1 : accumulator.words = 1 ;
@@ -35,3 +31,18 @@ function mapper(accumulator, currentValue) {
 }
  const stuff = monologueLines.reduce(mapper, {});
  const wordCountMap = stuff
+*/
+const wordCounter = function (wordCountObj, sentence) {
+  var sentenceLength = sentence.split(' ').length;
+
+   if (sentenceLength in wordCountObj) {
+    wordCountObj[sentenceLength]++;
+  }
+  else {
+    wordCountObj[sentenceLength] = 1;
+  }
+  return wordCountObj;
+};
+
+
+ const wordCountMap = monologueLines.reduce(wordCounter, {});
