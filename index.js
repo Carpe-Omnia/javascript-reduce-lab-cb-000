@@ -28,6 +28,3 @@ function batCount(accumulator, currentValue) {
   return accumulator + currentValue ;
 }
 var thing = {}
-
-
-
