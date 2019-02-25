@@ -33,4 +33,4 @@ function mapper(accumulator, currentValue) {
   !!accumulator.words ? acumulator.words += 1 : accumulator.words = 1 ;
   return accumulator ;
 }
-const wordCountMap = monologueLines.reduce(mapper, {});
+const wordCountMap = monologueLines.reduce(wordCounter, {});
