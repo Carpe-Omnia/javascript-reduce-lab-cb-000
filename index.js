@@ -23,7 +23,7 @@ const totalBatteries = batteryBatches.reduce(batCount, 0) ;
 function batCount(accumulator, currentValue) {
   return accumulator + currentValue ;
 }
-/*
+
 const mapper = function(accumulator, currentValue) {
   var wordCount = currentValue.split(' ').length ;
   if (wordCount in accumulator)
@@ -33,20 +33,3 @@ const mapper = function(accumulator, currentValue) {
   return accumulator ;
 }
  const wordCountMap = monologueLines.reduce(mapper, {});
-*/
-
-const wordCounter = function (wordCountObj, sentence) {
-  var sentenceLength = sentence.split(' ').length;
-
-   if (sentenceLength in wordCountObj) {
-    wordCountObj[sentenceLength]++;
-  }
-  else {
-    wordCountObj[sentenceLength] = 1;
-  }
-  return wordCountObj;
-};
-
-
- const wordCountMap = monologueLines.reduce(wordCounter, {});
-
